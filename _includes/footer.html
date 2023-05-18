@@ -111,6 +111,21 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
 
+<!--页面飘花瓣效果 参考https://github.com/zhiyual/PetalFloat-->
+<script src="{{"/js/petalfloat.js " | prepend: site.baseurl }}" ></script>
+
+<script type="text/javascript">
+  var pf = new PF();
+  pf.init();
+  pf.start();
+</script>
+
+new PF({
+    index : 100,
+    life : 80,
+    })
+
+
 <!-- Custom Theme JavaScript -->
 <script src="{{ "/js/hux-blog.min.js " | prepend: site.baseurl }}"></script>
 
